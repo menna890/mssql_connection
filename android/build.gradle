@@ -27,6 +27,9 @@ apply plugin: 'kotlin-android'
 android {
     compileSdkVersion 31
 
+    // Define the namespace here
+    namespace 'com.example.mssql_connection'
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -43,7 +46,6 @@ android {
 
     defaultConfig {
         minSdkVersion 16
-
         multiDexEnabled true
     }
 
